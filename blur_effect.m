@@ -1,5 +1,5 @@
 clc; clear; close
-img = imread('zz.jpeg');
+img = imread('Lenna.png');
 img = rgb2gray(img);
 [h,w] = size(img);
 img2 = zeros(h,w);
