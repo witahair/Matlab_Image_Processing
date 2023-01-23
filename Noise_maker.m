@@ -1,10 +1,11 @@
 clear; clc; close; 
+% In this file, We make noise first then we try reduce it with blur effect.(You'll see the result :))
 img = imread("robot.jpg");
 img = rgb2gray(img);
 [h,w] = size(img);
 img2 = zeros(h,w);
 mask = [1/9,1/9,1/9;1/9,1/9,1/9;1/9,1/9,1/9];
-
+% Noise
 for i=1:w
     for j=1:h
         x= rand();
@@ -16,7 +17,7 @@ for i=1:w
         end
     end
 end
-
+% Reduce Noise with Blur Effect
 for i=2:w-1
     for j=2:h-1
         x1 = 0;
