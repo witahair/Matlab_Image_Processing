@@ -1,4 +1,4 @@
-% Rotate 90
+% Rotate 90 - Counterclockwise
 img = imread("cameraman.png");
 [h,w] = size(img);
 img2 = zeros(h,w);
