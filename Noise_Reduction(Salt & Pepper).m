@@ -1,16 +1,16 @@
-%% First COde
+%% First Code
 clc; clear; close all
-img = imread('3.jpg');
+img = imread('Lenna.png');
 img = rgb2gray(img);
 [h,w] = size(img);
 imshow(img);
-%% Noisy 
+%% Noisy %10
 for i=1:w
     for j=1:h
         x = rand();
-       if(x>0.52)
+       if(x>0.95)
            img(j,i) = 255;
-       elseif(x<0.48)
+       elseif(x<0.05)
            img(j,i) = 0;
        end
     end
