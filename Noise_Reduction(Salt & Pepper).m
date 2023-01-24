@@ -21,7 +21,6 @@ imshow(img);
 img2 = img;
 for j=2:h-1
     for i=2:w-1
-        x1 = 0;
         if(img2(j,i)==0 || img2(j,i)==255)
            a = [];
            c = 1;
